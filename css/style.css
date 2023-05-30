@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;}
+
+html::-webkit-scrollbar{
+    width: 10px;}
+
+html::-webkit-scrollbar-track{
+    background: black;}
+
+html::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 80px;}
+
+body{
+    background: black;
+    padding-bottom: 20px;}
+/*navigation bar css*/
+section{
+    padding: 80px 9%;}
+
+.heading{
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 48px;
+    border-bottom: 1px solid orange;}
+
+.heading span{
+    color: orange;}
+
+.buttons{
+    display: inline-block;
+    margin-top: 1px;
+    border-radius: 80px;
+    background-color: orange;
+    padding: 5px 15px;
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    transition: color, background-color, font-size 1s;}
+
+.buttons:hover{
+    color: orange;
+    font-size: 15px;
+    background-color: white;}
+
+.navbar{
+    position: fixed;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: flex-end;}
+
+.navig{
+    padding: 15px;
+    font-size: 20px;
+    background: rgb(1, 1, 1);
+    flex: 2;
+    color: white;
+    text-align: center;
+    transition: 0.3s linear;}
+
+
+i{
+    color: orange;
+    padding: 8px;
+    transition: 0.3s linear;}
+
+.navig:hover{
+    color: orange;
+    border-bottom: 1px solid orange;}
+.navig:hover i{
+    color: white;}
+
+/*navigation bar css end*/
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 64px;
+    min-height: calc(100vh - 50px);
+}
+
+.home .picture {
+    flex: 1 1 450px;
+
+}
+.home .picture img {
+    height: 500px;
+    width: 500px;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+.home .content {
+    flex: 1 1 500px;
+}
+.home .content h3 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+.home .content span {
+    font-size: 35px;
+    color: orange;
+    padding: 4px 0px;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.home .content .defi {
+    color: white;
+    font-size: 10px;
+    display: block;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+
+.home .content input{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    color: orange;
+
+}
+/* about and contact css*/
+.about .row, .contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.contact .row .info-content{
+    width: 500px;
+}
+
+.contact .row .info-content .share a{
+    font-size: 25px;
+    height: 35px;
+    width: 35px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgb(90, 88, 88);
+    color: orange;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.contact .row .info-content .share a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background: orange;
+    color: white;
+}
+
+.about .row .info-content, .contact .row form{
+    flex:1 1 450px;
+}
+
+.contact .row form .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form .input-box input{
+    width: 49%;
+}
+
+.contact .row form input, textarea{
+    border-radius: 8px;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+    margin: 8px 0;
+    background: rgb(47, 46, 46);
+}
+
+.contact .row form textarea{
+    width: 100%;
+    height: 300px;
+}
+
+.contact .row form .buttons{
+    padding: 8px 5px;
+    color: white;
+    background-color: orange;
+}
+.contact .row form .buttons:hover{
+    color: orange;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.contact .row .info-content p{
+    line-height: 2;
+    font-size: 15px;
+    color: white;
+    padding: 10px 0;
+}
+.contact .row .info-content .box-content{
+    padding: 16px 0;
+}
+
+.contact .row .info-content .box-content .box{
+    display: flex;
+    gap: 25px;
+}
+
+.contact .row .info-content .box-content i{
+    font-size: 30px;
+    color: orange;
+    padding-top: 8px;
+}
+
+.about .row .info-content h1, .contact .row .info-content h1{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+.about .row .info-content h1 span{
+    color: orange;
+    text-transform: uppercase;
+}
+
+.about .row .info-content .box-content{
+    padding: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .row .info-content .box-content .box{
+    flex: 1 1 250px;
+}
+
+.about .row .info-content .box-content .box h3, .contact .row .info-content .box-content .box h3{
+    font-size: 15px;
+    color: white;
+    padding: 7px 1px;
+}
+
+.about .row .info-content .box-content .box h3 span{
+    color: orange;
+}
+
+.count-content{
+    flex:1 1 500px;
+}
+
+.count-content{
+    flex:1 1 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.count-content .box{
+    padding: 30px 45px;
+    border-radius: 10px;
+    background-color: rgb(104, 99, 99);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    flex: 1 1 200px;
+}
+
+.count-content .box h3{
+    font-size: 30px;
+    color: orange;
+
+}
+
+.count-content .box p{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding-top: 2px;
+
+}
+
+/* skills section css */
+.skills .box-content{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+ }
+ .skills .box-content .box{
+     padding: 2rem;
+     text-align: center;
+     box-shadow:  0 8px 16px rgba(0, 0, 0, 0.7);
+     border-radius: 8px;
+     background: rgb(175, 169, 169);
+     transition: opacity 0.5s;
+     cursor: pointer;
+ }
+
+ .skills .box-content .box:hover{
+    opacity: 0.4;
+}
+ 
+ .skills .box-content .box img{
+     height: 7rem;
+     margin-bottom: 1rem;
+ 
+ }
+ .skills .box-content .box h3{
+     color: white;
+     font-size: 25px;
+ }
+/* educ skills css */
+ .educ .box-content{
+    display: flex;
+    flex-wrap: wrap;
+ } 
+
+ .educ .box-content .box{
+    flex: 1 1 500px;
+    margin-left: 28px;
+    padding: 32px;
+    padding-left: 50px;
+    padding-top: 9px;
+    padding-bottom: 28px;
+    border-left: 1.5px solid rgb(177, 177, 177);
+    position: relative;
+ }
+ .educ .box-content .box i{
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 0px; left: -25px;
+    position: absolute;
+ }
+
+ .educ .box-content .box span{
+    color: orange;
+    font-size: 15px;
+    border-radius: 80px;
+    padding: 3px 5px;
+    background: rgb(41, 41, 41);
+ }
+ .educ .box-content .box p{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+ }
+
+ .educ .box-content .box h3{
+    color: white;
+    padding-top: 20px;
+    font-size: 23px;
+ }
+/* portfolio, grade, .certificate css */
+ .portfolio, .grado{
+    text-align: center;
+ }
+
+ .portfolio .box-content, .grado .box-content, .certificate .box-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+ }
+
+ .portfolio .box-content .box, .grado .box-content .box{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+ }
+
+ .portfolio .box-content .box:hover .content, .grado .box-content .box:hover .content{
+    transform: translateY(0%);
+    transition: .3s linear;
+ }
+
+ .portfolio .box-content .box .content, .grado .box-content .box .content {
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(84, 83, 83);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 27px;
+    transform: translateY(-100%);
+    opacity: 0.9;
+}
+
+.portfolio .box-content .box .content h3, .grado .box-content .box .content h3, .certificate .box-content .box .content h3{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.portfolio .box-content .box .content p, .grado .box-content .box .content p{
+    padding: 27px 0;
+    font-size: 18px;
+    line-height: 2;
+    color: orange;
+    font-weight: bold;
+}
+/*wag muna to isama depende kung may iallagay pa
+
+.portfolio .box-content .box .content a{
+    font-size: 20px;
+    color: orange;
+    text-decoration: underline;
+}
+.portfolio .box-content .box .content a:hover{
+    color: white;
+}
+*/
+ .portfolio .box-content .box img, .grado .box-content .box img{
+    height: 100%;width: 100%;
+    object-fit: cover;
+ }
+
+ .certificate .box-content .box{
+    text-align: center;
+    padding: 32px;
+    border-radius: 8px;
+    background: rgb(41, 41, 41);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+ }
+
+ .certificate .box-content .box:hover .image img{
+    transform: scale(1.2);
+ } 
+
+ .certificate .box-content .box .image{
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+ }
+ .certificate .box-content .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s linear;
+ }
+
+ .certificate .box-content .box .content .icons{
+    position: relative;
+    top: -15px;
+    border-radius: 8px;
+    display: inline-block;
+    background: rgba(69, 67, 67, 0.962);;
+ }
+
+ .certificate .box-content .box .content .icons a{
+    font-size: 20px;
+    margin: 0 16px;
+    color: white;
+ }
+ .certificate .box-content .box .content .icons a:hover{
+    color: orange;
+ }
+
+ .certificate .box-content .box .content .icons a i{
+    color: orange;
+    padding: 8px;
+ }
+ .certificate .box-content .box .content p{
+    font-size: 18px;
+    color: white;
+    padding: 10px 0;
+    line-height: 2;
+ }
+
+ footer p{
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+ }
+ 
+  
+/*qrs*/
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+
+    }
+    section{
+        padding: 100px 32px;
+    }
+}
+
+@media (max-width:768px){
+
+    .navbar i {
+        padding: 0px;
+   }
+    .navbar .navig span {
+        display: none;
+}
+    .navbar .navig:hover{
+        padding-top: 32px;
+    }
+    .home{
+        text-align: center;
+        gap: 10px;
+    }
+
+    .home .picture img{
+        text-align: center;
+            height: 300px;
+            width: 300px;
+    }
+
+    .home .content h3{
+        font-size: 10px;
+        text-align: center;
+    }
+    .home .content span {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .home .content input{
+        width: 9px;
+        height: 9px;
+    }
+    .about-me{
+        font-size: 25px;
+    }
+
+    .skills .box-content{
+     grid-template-columns: repeat(2, 1fr);
+     }
+
+     .contact .row form .input-box input{
+        width: 100%;
+        margin-bottom: 5px;
+     }
+    
+}
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    .skills .box-content{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        }
+}
+
+

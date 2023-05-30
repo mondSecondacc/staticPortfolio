@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--cdn link(di ko alam para saan)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <!-- paglink ng css na gawa mo sa html file mo -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- navigationbar section -->
+    <nav class="navbar">
+            <a class="navig" href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <a class="navig" href="./about.html"><i class="fas fa-user"></i><span>About</span></a></li>
+            <a class="navig" href="./acads.html"> <i class="fa-solid fa-hand"></i><span>Education</span></a></li>
+            <a class="navig" href="./project.html"> <i class="fa-solid fa-briefcase"></i><span>Project</span></a></li>
+            <a class="navig" href="./contact.html"> <i class="fas fa-address-book"></i><span>Contact</span></a>
+    </nav>
+    <!-- navigationbar end -->
+
+    <!-- code for home content -->
+    <section class="home">
+        <div class="picture">
+            <img src="./images/try1.png" class="pic">
+        </div>
+
+        <div class="content">
+            <h3> &lt; Hello, World! &gt; <input type="color" oninput="changeColor(event)" value="#ff0000"></h3>
+            <div class="static">
+            </div>
+             <span class="input">
+             </span>
+            <p class="defi"> 
+                BS Computer Engineering Student. An Asping Software Engineer in the Philippines.
+            </p>
+            <a href="./about.html" class="buttons"> About Me! </a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Created on 2023 <i class="fa-solid fa-circle-r"></i></p>
+    </footer>
+    <!-- code for home content end -->
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+var typed = new Typed(".input", {
+    strings: ["Thank you for Visiting", "I am Raymond Cancilao", "Thank you for Visiting",], 
+    typeSpeed: 50,
+    backSpeed: 40,
+    loop: true
+})
+    </script>
+</body>
+</html>
